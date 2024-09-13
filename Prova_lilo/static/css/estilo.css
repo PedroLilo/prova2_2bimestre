@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary: #4B9534;
+    --secondary: #51383c;
+    --alert: #ff0000;
+    --white: #fff;
+    --black: #000;
+}
+
+
+
+/*header*/
+
+header{
+    display: flex;
+    background-color: var(--primary);
+    justify-content: start;
+    align-items: center;
+    height: 6rem;
+}
+
+header img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+/*main*/
+
+main{
+    background-color: var(--white);
+    min-height: calc(100vh - 10.3rem);
+}
+
+main div a{
+    font-size: 2rem;
+}
+
+/*filme*/
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--alert);
+    font-size: large;
+    font-weight: bold;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+button a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+button{
+    background-color:var(--secondary);
+    border: none;
+    border-style:solid;
+    padding: 2px;
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.add{
+    align-items: start;
+    justify-content: left;
+    display: flex;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+.tab_prof, tr, td, th{
+    border: 2px solid var(--black);
+    border-collapse: collapse;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.tab_prof th{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+table {
+    padding-top: 10rem;
+    margin: auto;
+}
+
+/*Formulario*/
+
+a, input{
+    display: block;
+    font-size: 2rem;
+}
+
+form{
+    padding-top: 5rem;
+}
+
+.adicionar{
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.adicionar div{
+    display: flex;
+    align-items: self-start;
+    justify-content: right;
+    padding-bottom:2rem ;
+}
+
+.adicionar div label{
+    font-size: 2rem;
+    display: flex;
+    padding-right: 2rem;
+}
+
+
+.adicionar div button{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--white);
+}

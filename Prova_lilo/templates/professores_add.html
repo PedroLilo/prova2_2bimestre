@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    {% set mensagens = get_flashed_messages()%}
+    {% if mensagens%}
+        {% for msg in mensagens%}
+            <div class="message">
+                {{msg}}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <form action="/professores/save" method="post">
+        <fieldset class="adicionar">
+            <div>
+                <label for="nome">nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div> 
+            <div>
+                <label for="disciplina">disciplina: </label>
+                <input type="text" name="disciplina" id="disciplina">
+            </div>
+            <div>
+                <label for="idade">idade: </label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            <div>
+                <button type="submit">Salvar</button>
+            </div>        
+        </fieldset>
+    </form>
+{% endblock %}
